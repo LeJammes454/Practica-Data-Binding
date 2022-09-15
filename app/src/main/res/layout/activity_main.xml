@@ -41,7 +41,6 @@
         android:fontFamily="@font/roboto"
         android:text="@string/done"
         android:textStyle="bold|italic"
-        android:onClick="clickHandlerFunction"
         tools:ignore="OnClick" />
 
     <TextView
@@ -51,7 +50,10 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:visibility="gone"
-        android:text=""/>
+        android:text=""
+        android:background="@color/colorAccent"
+        android:paddingBottom="@dimen/Small_Padding"
+        />
 
     <ImageView
         android:id="@+id/imageView"
