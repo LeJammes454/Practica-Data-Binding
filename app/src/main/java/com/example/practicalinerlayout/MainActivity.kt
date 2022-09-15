@@ -1,5 +1,6 @@
 package com.example.practicalinerlayout
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         val nicknameTextView = findViewById<TextView>(R.id.nickname_text)
 
         val  addNickName = findViewById<Button>(R.id.done_button)
+        val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE)
+      //  InputMethodManager
+      //  inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+
 
         nicknameTextView.text=editText.text
         editText.visibility= View.GONE
@@ -34,5 +39,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity","sad")
         }
     }
+
+
 
 }
